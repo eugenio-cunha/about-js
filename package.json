@@ -1,0 +1,34 @@
+{
+  "name": "about",
+  "version": "1.0.0",
+  "description": "Collect and share the MDN samples",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "export $(cat .env | xargs) && node src/index.js",
+    "lint": "eslint src/**/*.js",
+    "test": "export $(cat .env | xargs) && mocha test/**/*.js --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eugenio-cunha/about-js.git"
+  },
+  "keywords": [
+    "js",
+    "mdn"
+  ],
+  "author": "Eugenio Cunha <eugenio.cunha@ymail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eugenio-cunha/about-js/issues"
+  },
+  "homepage": "https://github.com/eugenio-cunha/about-js#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^6.8.0",
+    "mocha": "^7.1.2"
+  },
+  "dependencies": {
+    "puppeteer": "^3.0.1"
+  }
+}
